@@ -147,10 +147,10 @@ export default function LembahHarau() {
           muted
           autoPlay
         ></video>
-        <p className="absolute top-[100px] left-[90px] text-xl text-red-900 font-bold ">
+        <p className="absolute top-[100px] left-[95px] text-xl text-red-900 font-bold ">
           Hubungi kami di sini
         </p>
-        <ul className="flex justify-center  absolute top-[170px] left-[75px] space-x-5 ">
+        <ul className="flex justify-center  absolute top-[170px] left-[80px] space-x-5 ">
           {ikon.map((listIkon, ikonIndex) => (
             <li
               onClick={() => clickInfoKontak(ikonIndex)}
