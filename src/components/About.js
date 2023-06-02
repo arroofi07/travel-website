@@ -124,7 +124,7 @@ export default function About() {
           textShadow: "0 0 10px cyan",
           textDecoration: "underline 2px black ",
         }}
-        className={`absolute top-[820px] text-white font-extralight text-[20px]   ml-[50px] `}
+        className={` absolute top-[820px] text-white font-extralight text-[20px]   ml-[50px] `}
       >
         <TypeWriter
           options={{

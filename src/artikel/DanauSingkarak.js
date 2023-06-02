@@ -78,7 +78,7 @@ export default function DanauSingkarak() {
         style={{ height: "55px" }}
         className=" flex  justify-center z-50 bg-cyan-800 fixed right-0 left-0 text-3xl pt-3 pl-3 cursor-pointer hover:text-white"
       >
-        <Link to="/">
+        <Link to="/home">
           <HiArrowCircleLeft className="relative -left-[120px] text-white top-1 " />
         </Link>
         <FaMapMarkedAlt className="text-white mr-11 " />

@@ -7,18 +7,20 @@ import NgaraiSianok from "../artikel/NgaraiSianok";
 import DanauSingkarak from "../artikel/DanauSingkarak";
 import PuncakLawang from "../artikel/PuncakLawang";
 import { isMobile } from "react-device-detect";
+import Welcome from "../pages/Welcome";
 
 function App() {
   return (
     <>
       {isMobile ? (
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/lembah-harau" element={<LembahHarau />} />
-          <Route path="/danau-maninjau" element={<DanauManinjau />} />
-          <Route path="/ngarai-sianok" element={<NgaraiSianok />} />
-          <Route path="/danau-singkarak" element={<DanauSingkarak />} />
-          <Route path="/puncak-lawang" element={<PuncakLawang />} />
+          <Route path="/" element={<Welcome />}></Route>
+          <Route path="/home" element={<Home />} />
+          <Route path="/home/lembah-harau" element={<LembahHarau />} />
+          <Route path="/home/danau-maninjau" element={<DanauManinjau />} />
+          <Route path="/home/ngarai-sianok" element={<NgaraiSianok />} />
+          <Route path="/home/danau-singkarak" element={<DanauSingkarak />} />
+          <Route path="/home/puncak-lawang" element={<PuncakLawang />} />
         </Routes>
       ) : (
         <h1 className="ml-[10%] mt-[20%] text-5xl text-white font-extrabold ">

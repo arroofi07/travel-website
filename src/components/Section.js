@@ -46,11 +46,11 @@ export default function Section() {
 
       <button
         onClick={isHidden ? handleClik2 : handleClik}
-        style={{ border: "0.5px solid red" }}
-        className=" z-30 bg-cyan-700 absolute top-[200px] text-white
+        style={{ border: "0.5px solid cyan", boxShadow: "0 0 10px cyan" }}
+        className="hover:tex-white hover:bg-black z-30 bg-cyan-700 absolute top-[200px] text-white
        w-[100px] ml-10 h-[30px] rounded-xl text-[16px] font-serif  "
       >
-        Get Started
+        Destination
       </button>
 
       <p
@@ -94,7 +94,7 @@ export default function Section() {
             {artikel.map((listArtikel, index) => (
               <li
                 key={index}
-                className="mb-2 mt-2 -ml-1 pl-2 hover:bg-cyan-500 hover:rounded-[3px] hover:text-cyan-900 w-[300px] hover:bg-opacity-100 "
+                className="mb-2 mt-2 -ml-1 pl-2 hover:bg-cyan-500 hover:rounded-[3px] hover:text-black w-[300px] hover:bg-opacity-100 "
               >
                 <Link to={listArtikel.url}>{listArtikel.title}</Link>
               </li>
