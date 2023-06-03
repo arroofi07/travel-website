@@ -1,8 +1,8 @@
 import React from "react";
 import univ from "../assets/univ.jpg";
 import { Link } from "react-router-dom";
-import ptik from "../assets/ptik.jpeg";
-import  TypeWriter from 'typewriter-effect'
+import ptik2 from "../assets/ptik2.jpeg";
+import TypeWriter from "typewriter-effect";
 import {
   FaFacebook,
   FaTwitterSquare,
@@ -76,7 +76,7 @@ export default function Welcome() {
 
   return (
     <div className="w-full h-[180vh] relative z-50 text-center font-serif   ">
-      <img src={univ} alt="" className="object-cover w-full h-[200px] " />
+      <img src={univ} alt="" className="object-cover w-full h-[260px] " />
       <Link to="home">
         <button
           style={{ border: "1px solid cyan", boxShadow: "0 0 10px black" }}
@@ -98,23 +98,24 @@ export default function Welcome() {
         </p>
       </div>
 
-      <h1 
-      style={{textShadow:'0 0 10px cyan'}}
-      className="mt-[130px] -mb-[120px] text-white text-[30px] " >
-       <TypeWriter
-       options={{
-        strings: ["PTIK"],
-        autoStart:true,
-        loop:true,
-        typeSpeed:-5,
-       }}
-       />
+      <h1
+        style={{ textShadow: "0 0 10px cyan" }}
+        className="mt-[130px] -mb-[120px] text-white text-[30px] "
+      >
+        <TypeWriter
+          options={{
+            strings: ["PTIK"],
+            autoStart: true,
+            loop: true,
+            typeSpeed: -5,
+          }}
+        />
       </h1>
 
       <div className=" w-full h-[300px] mt-[120px] flex justify-center items-center  ">
         <img
           id="ptik"
-          src={ptik}
+          src={ptik2}
           alt=""
           className="w-[330px] h-[250px] rounded-3xl "
         ></img>
